@@ -35,9 +35,15 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+expo-dev.d.ts
 
 app-example
 
 # generated native folders
 /ios
 /android
+
+
+#SonarQube
+/.scannerwork
+sonarQube.md
