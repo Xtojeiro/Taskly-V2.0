@@ -1,0 +1,11 @@
+model habitlogs{
+    id Int @id @default(autoincrement())
+    date String
+    completed Boolean
+    completionRate Int
+    userId Int
+    habitId Int
+
+    userlog User @relation(fields: [userId], references: [id])
+    habitlog habits @relation(fields: [habitId], references: [id])
+}

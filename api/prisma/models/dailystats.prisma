@@ -1,0 +1,11 @@
+model dailyStats{
+  id Int @id @default(autoincrement())
+  completedHabits Int
+  completionRate Int
+  completionDate DateTime
+  score Int
+  totalHabits Int
+  userId Int
+
+  userHabits User @relation(fields: [userId], references: [id])
+}

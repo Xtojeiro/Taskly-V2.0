@@ -1,0 +1,18 @@
+model habits{
+    id Int @id @default(autoincrement())
+    name String
+    description String
+    category habitcategory @default(personal)
+    frequency habitfrequency @default(daily)
+    targetdays Json
+    scheduledtime String
+    isactive Boolean
+    userId Int
+
+    userhabits User @relation(fields: [userId], references: [id])
+
+    habitlog habitlogs[]
+
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+}
