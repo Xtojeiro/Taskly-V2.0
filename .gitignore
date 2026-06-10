@@ -1,25 +1,35 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+# Ignore node modules
+node_modules
+/api/node_modules/
+/mobile/node_modules/
 
-# dependencies
-node_modules/
 
-# Expo
-.expo/
-dist/
-web-build/
-expo-env.d.ts
+## Mobile specific ignores
+# Ignore build output
+/mobile/dist/
+/mobile/.expo/
+/mobile/web-build/
+/mobile/expo-env.d.ts
+/mobile/.kotlin/
+/mobile/*.orig.*
+/mobile/*.jks
+/mobile/*.p8
+/mobile/*.p12
+/mobile/*.key
+/mobile/*.mobileprovision
+/mobile/.metro-health-check*
+/mobile/npm-debug.log
+/mobile/yarn-debug.log
+/mobile/yarn-error.log
+/mobile/.DS_Store
+/mobile/*.pem
+/mobile/.env*.local
+/mobile/*.tsbuildinfo
+/mobile/ios
+/mobile/android
+/mobile/.vscode
 
-# Native
-.kotlin/
-*.orig.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
 
-# Metro
-.metro-health-check*
 
 # debug
 npm-debug.*
@@ -47,3 +57,7 @@ app-example
 #SonarQube
 /.scannerwork
 sonarQube.md
+
+#env
+.env 
+api/.env
