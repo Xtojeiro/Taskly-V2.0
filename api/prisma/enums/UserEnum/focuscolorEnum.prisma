@@ -1,0 +1,7 @@
+enum focuscolor{
+    red
+    blue
+    green
+    yellow
+    orange
+}

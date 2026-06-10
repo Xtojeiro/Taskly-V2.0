@@ -1,0 +1,5 @@
+enum habitcategory{
+    personal
+    work
+    health
+}

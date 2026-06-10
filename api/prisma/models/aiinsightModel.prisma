@@ -1,0 +1,11 @@
+model aiInsight{
+  id Int @id @default(autoincrement())
+  model String @default("openai/gpt-oss-120b:free")
+  sugestion String
+  summary String
+  userId Int
+
+  userInsight User @relation(fields: [userId], references: [id])
+
+  createdAt DateTime @default(now())
+}

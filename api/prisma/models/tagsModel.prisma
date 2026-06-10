@@ -1,0 +1,10 @@
+model tags{
+    id Int @id  @default(autoincrement())
+    name String
+    color color @default(red)
+    userId Int
+
+    userTag User @relation(fields: [userId], references: [id])
+
+    createdAt DateTime @default(now())
+}

@@ -1,0 +1,8 @@
+enum color{
+    red
+    blue
+    green
+    yellow
+    purple
+    pink
+}

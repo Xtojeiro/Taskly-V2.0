@@ -31,5 +31,33 @@ node_modules
 
 
 
-## Ignores
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files
+.env*.local
+
+# typescript
+*.tsbuildinfo
+expo-dev.d.ts
+
+app-example
+
+# generated native folders
+/ios
+/android
+
+
+#SonarQube
+/.scannerwork
 sonarQube.md
+
+#env
+.env 
+api/.env

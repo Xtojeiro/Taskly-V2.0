@@ -1,0 +1,23 @@
+model User{
+  id Int  @id @default(autoincrement())
+  name String 
+  email String @unique
+  hashedPassword String 
+  goals String
+  tokenId String
+  weeklyTarget Int
+
+  focusColor focuscolor @default(red)
+  language language @default(ptPT)
+  theme theme @default(SYSTEM)
+
+  aiInsight aiInsight[]
+  dailyStats dailyStats[]
+  session session[]
+  userTags tags[]
+  userhabits habits[]
+  userlog habitlogs[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
